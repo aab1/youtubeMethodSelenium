@@ -1,17 +1,27 @@
 package cucumber.steps;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.GregorianCalendar;
+
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import library.Library;
 
-public class GetQuoteSteps {
+public class GetQuoteSteps extends Library{
 	private WebDriver driver;
 	private WebElement getAQuoteSection;
 	private WebElement firstName;
@@ -35,10 +45,25 @@ public class GetQuoteSteps {
 	private WebElement findCarBtn;
 	private WebElement yourCarSection;*/
 	
+	//Library helper = new Library();
+	
 	@Given("^I navigate to Axa website$")
-	public void i_navigate_to_Axa_website() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "./lib/Browser/chromedriver.exe");
-		driver = new ChromeDriver();
+	public void i_navigate_to_Axa_website() throws Throwable 
+	{
+		
+//		System.setProperty("webdriver.chrome.driver", "C:/seleniumTraining/CarRating/lib/chromedriver.exe");
+//		driver = new ChromeDriver();
+//		driver.manage().window().maximize();
+//		driver.navigate().to("https://secureweb.axa.ie/MotorQuote/Step1?promoCode=AXP020001");
+		/*####################################################################################################
+//		System.setProperty("webdriver.gecko.driver", "./lib/Browser/geckodriver.exe");
+//		driver = new FirefoxDriver();
+//		driver.get("https://secureweb.axa.ie/MotorQuote/Step1?promoCode=AXP020001");
+//		driver.manage().window().maximize();
+ * */
+//		//####################################################################################################
+		System.setProperty("webdriver.edge.driver", "./lib/Browser/MicrosoftWebDriver.exe");
+		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://secureweb.axa.ie/MotorQuote/Step1?promoCode=AXP020001");
 	}
@@ -58,6 +83,7 @@ public class GetQuoteSteps {
 	    lastName = driver.findElement(By.id("YourDetails_LastName"));
 	    lastName.clear();
 	    lastName.sendKeys("car");
+	    
 	}
 
 	@When("^I enter date of birth$")
@@ -115,11 +141,15 @@ public class GetQuoteSteps {
 	@When("^I click find address$")
 	public void i_click_find_address() throws Throwable {
 		try{
-			Thread.sleep(7000);
+			Thread.sleep(9000);
 			findAddressBtn = driver.findElement(By.cssSelector(".btn.btn-emphasis.btn-icon-right.icon.addressLookupSearchButton"));
 			findAddressBtn.click();
+			
 		}catch(Exception e){
-			Assert.assertTrue("Unable to click find address button", findAddressBtn.isDisplayed());
+			captureAndSaveScreenShot(driver);
+			confirmAddrressCheckBox = driver.findElement(By.id("confirmAddress-label"));
+			Assert.assertTrue("Unable to click find address button", confirmAddrressCheckBox.isDisplayed());
+			
 		}
 		
 	   

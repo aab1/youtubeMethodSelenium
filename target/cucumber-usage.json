@@ -1,34 +1,16 @@
 [
   {
-    "source": "^I select employment status$",
-    "steps": [
-      {
-        "name": "I select employment status",
-        "aggregatedDurations": {
-          "average": 0.161236343,
-          "median": 0.161236343
-        },
-        "durations": [
-          {
-            "duration": 0.161236343,
-            "location": "features/GetAQuote.feature:19"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "^I enter date of birth$",
     "steps": [
       {
         "name": "I enter date of birth",
         "aggregatedDurations": {
-          "average": 0.433152299,
-          "median": 0.433152299
+          "average": 0.346660817,
+          "median": 0.346660817
         },
         "durations": [
           {
-            "duration": 0.433152299,
+            "duration": 0.346660817,
             "location": "features/GetAQuote.feature:10"
           }
         ]
@@ -41,121 +23,13 @@
       {
         "name": "I navigate to Axa website",
         "aggregatedDurations": {
-          "average": 18.525205949,
-          "median": 18.525205949
+          "average": 3.679875041,
+          "median": 3.679875041
         },
         "durations": [
           {
-            "duration": 18.525205949,
+            "duration": 3.679875041,
             "location": "features/GetAQuote.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I enter my eircode$",
-    "steps": [
-      {
-        "name": "I enter my eircode",
-        "aggregatedDurations": {
-          "average": 0.145676566,
-          "median": 0.145676566
-        },
-        "durations": [
-          {
-            "duration": 0.145676566,
-            "location": "features/GetAQuote.feature:15"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click the checkbox$",
-    "steps": [
-      {
-        "name": "I click the checkbox",
-        "aggregatedDurations": {
-          "average": 6.057878173,
-          "median": 6.057878173
-        },
-        "durations": [
-          {
-            "duration": 6.057878173,
-            "location": "features/GetAQuote.feature:17"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I enter email address$",
-    "steps": [
-      {
-        "name": "I enter email address",
-        "aggregatedDurations": {
-          "average": 0.1575148,
-          "median": 0.1575148
-        },
-        "durations": [
-          {
-            "duration": 0.1575148,
-            "location": "features/GetAQuote.feature:12"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I select yes I know my eirocode$",
-    "steps": [
-      {
-        "name": "I select yes I know my eirocode",
-        "aggregatedDurations": {
-          "average": 0.150821343,
-          "median": 0.150821343
-        },
-        "durations": [
-          {
-            "duration": 0.150821343,
-            "location": "features/GetAQuote.feature:14"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I select type of household$",
-    "steps": [
-      {
-        "name": "I select type of household",
-        "aggregatedDurations": {
-          "average": 0.135448974,
-          "median": 0.135448974
-        },
-        "durations": [
-          {
-            "duration": 0.135448974,
-            "location": "features/GetAQuote.feature:18"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I select occupation$",
-    "steps": [
-      {
-        "name": "I select occupation",
-        "aggregatedDurations": {
-          "average": 0.172394891,
-          "median": 0.172394891
-        },
-        "durations": [
-          {
-            "duration": 0.172394891,
-            "location": "features/GetAQuote.feature:20"
           }
         ]
       }
@@ -167,12 +41,12 @@
       {
         "name": "Axa get quote section is displayed",
         "aggregatedDurations": {
-          "average": 0.117777915,
-          "median": 0.117777915
+          "average": 0.04396363,
+          "median": 0.04396363
         },
         "durations": [
           {
-            "duration": 0.117777915,
+            "duration": 0.04396363,
             "location": "features/GetAQuote.feature:8"
           }
         ]
@@ -185,67 +59,13 @@
       {
         "name": "I enter my name",
         "aggregatedDurations": {
-          "average": 0.535974476,
-          "median": 0.535974476
+          "average": 0.158700448,
+          "median": 0.158700448
         },
         "durations": [
           {
-            "duration": 0.535974476,
+            "duration": 0.158700448,
             "location": "features/GetAQuote.feature:9"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I enter my phone number$",
-    "steps": [
-      {
-        "name": "I enter my phone number",
-        "aggregatedDurations": {
-          "average": 0.306070906,
-          "median": 0.306070906
-        },
-        "durations": [
-          {
-            "duration": 0.306070906,
-            "location": "features/GetAQuote.feature:13"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^i enter my gender$",
-    "steps": [
-      {
-        "name": "i enter my gender",
-        "aggregatedDurations": {
-          "average": 0.16316668,
-          "median": 0.16316668
-        },
-        "durations": [
-          {
-            "duration": 0.16316668,
-            "location": "features/GetAQuote.feature:11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click find address$",
-    "steps": [
-      {
-        "name": "I click find address",
-        "aggregatedDurations": {
-          "average": 7.250353812,
-          "median": 7.250353812
-        },
-        "durations": [
-          {
-            "duration": 7.250353812,
-            "location": "features/GetAQuote.feature:16"
           }
         ]
       }

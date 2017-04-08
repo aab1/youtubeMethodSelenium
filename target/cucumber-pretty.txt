@@ -8,26 +8,14 @@ Feature: Get car insurance quote from AXA
     [32mAnd [0m[32mAxa get quote section is displayed[0m [90m# GetQuoteSteps.axa_get_quote_section_is_displayed()[0m
     [32mWhen [0m[32mI enter my name[0m                   [90m# GetQuoteSteps.i_enter_my_name()[0m
     [32mAnd [0m[32mI enter date of birth[0m              [90m# GetQuoteSteps.i_enter_date_of_birth()[0m
-    [32mAnd [0m[32mi enter my gender[0m                  [90m# GetQuoteSteps.i_enter_my_gender()[0m
-    [32mAnd [0m[32mI enter email address[0m              [90m# GetQuoteSteps.i_enter_email_address()[0m
-    [32mAnd [0m[32mI enter my phone number[0m            [90m# GetQuoteSteps.i_enter_my_phone_number()[0m
-    [32mAnd [0m[32mI select yes I know my eirocode[0m    [90m# GetQuoteSteps.i_select_yes_I_know_my_eirocode()[0m
-    [32mAnd [0m[32mI enter my eircode[0m                 [90m# GetQuoteSteps.i_enter_my_eircode()[0m
-    [32mAnd [0m[32mI click find address[0m               [90m# GetQuoteSteps.i_click_find_address()[0m
-    [32mAnd [0m[32mI click the checkbox[0m               [90m# GetQuoteSteps.i_click_the_checkbox()[0m
-    [32mAnd [0m[32mI select type of household[0m         [90m# GetQuoteSteps.i_select_type_of_household()[0m
-    [32mAnd [0m[32mI select employment status[0m         [90m# GetQuoteSteps.i_select_employment_status()[0m
-    [32mAnd [0m[32mI select occupation[0m                [90m# GetQuoteSteps.i_select_occupation()[0m
-    [31mAnd [0m[31mI click continue[0m                   [90m# GetQuoteSteps.i_click_continue()[0m
-      [31morg.openqa.selenium.ElementNotVisibleException: element not visible
-        (Session info: chrome=56.0.2924.87)
-        (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-      Command duration or timeout: 29 milliseconds
+    [31mAnd [0m[31mi enter my gender[0m                  [90m# GetQuoteSteps.i_enter_my_gender()[0m
+      [31morg.openqa.selenium.WebDriverException: Element is obscured (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 16 milliseconds
       Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
       System info: host: 'Yemi-PC', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-      Driver info: org.openqa.selenium.chrome.ChromeDriver
-      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\adeyemi\AppData\Local\Temp\scoped_dir10064_10677}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-      Session ID: f8036151b65887d3d4854929e9682cab
+      Driver info: org.openqa.selenium.edge.EdgeDriver
+      Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]
+      Session ID: F6B05236-8C58-4B7C-B499-B752FCB7CEDA
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
       	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -37,7 +25,17 @@ Feature: Get car insurance quote from AXA
       	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
       	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
       	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-      	at cucumber.steps.GetQuoteSteps.i_click_continue(GetQuoteSteps.java:164)
-      	at ✽.And I click continue(features/GetAQuote.feature:21)
+      	at cucumber.steps.GetQuoteSteps.i_enter_my_gender(GetQuoteSteps.java:107)
+      	at ✽.And i enter my gender(features/GetAQuote.feature:11)
       [0m
+    [36mAnd [0m[36mI enter email address[0m              [90m# GetQuoteSteps.i_enter_email_address()[0m
+    [36mAnd [0m[36mI enter my phone number[0m            [90m# GetQuoteSteps.i_enter_my_phone_number()[0m
+    [36mAnd [0m[36mI select yes I know my eirocode[0m    [90m# GetQuoteSteps.i_select_yes_I_know_my_eirocode()[0m
+    [36mAnd [0m[36mI enter my eircode[0m                 [90m# GetQuoteSteps.i_enter_my_eircode()[0m
+    [36mAnd [0m[36mI click find address[0m               [90m# GetQuoteSteps.i_click_find_address()[0m
+    [36mAnd [0m[36mI click the checkbox[0m               [90m# GetQuoteSteps.i_click_the_checkbox()[0m
+    [36mAnd [0m[36mI select type of household[0m         [90m# GetQuoteSteps.i_select_type_of_household()[0m
+    [36mAnd [0m[36mI select employment status[0m         [90m# GetQuoteSteps.i_select_employment_status()[0m
+    [36mAnd [0m[36mI select occupation[0m                [90m# GetQuoteSteps.i_select_occupation()[0m
+    [36mAnd [0m[36mI click continue[0m                   [90m# GetQuoteSteps.i_click_continue()[0m
     [36mThen [0m[36myour car section is displayed[0m     [90m# GetQuoteSteps.your_car_section_is_displayed()[0m

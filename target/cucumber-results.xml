@@ -1,32 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.376287">
-<testcase classname="Get car insurance quote from AXA" name="Get the quote online" time="34.376287">
-<failure message="org.openqa.selenium.ElementNotVisibleException: element not visible&#10;  (Session info: chrome=56.0.2924.87)&#10;  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 29 milliseconds&#10;Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'&#10;System info: host: 'Yemi-PC', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\adeyemi\AppData\Local\Temp\scoped_dir10064_10677}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]&#10;Session ID: f8036151b65887d3d4854929e9682cab&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at cucumber.steps.GetQuoteSteps.i_click_continue(GetQuoteSteps.java:164)&#13;&#10;&#9;at ✽.And I click continue(features/GetAQuote.feature:21)&#13;&#10;"><![CDATA[Given I navigate to Axa website.............................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="4.25962">
+<testcase classname="Get car insurance quote from AXA" name="Get the quote online" time="4.25962">
+<failure message="org.openqa.selenium.WebDriverException: Element is obscured (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 16 milliseconds&#10;Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'&#10;System info: host: 'Yemi-PC', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]&#10;Session ID: F6B05236-8C58-4B7C-B499-B752FCB7CEDA&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at cucumber.steps.GetQuoteSteps.i_enter_my_gender(GetQuoteSteps.java:107)&#13;&#10;&#9;at ✽.And i enter my gender(features/GetAQuote.feature:11)&#13;&#10;"><![CDATA[Given I navigate to Axa website.............................................passed
 And Axa get quote section is displayed......................................passed
 When I enter my name........................................................passed
 And I enter date of birth...................................................passed
-And i enter my gender.......................................................passed
-And I enter email address...................................................passed
-And I enter my phone number.................................................passed
-And I select yes I know my eirocode.........................................passed
-And I enter my eircode......................................................passed
-And I click find address....................................................passed
-And I click the checkbox....................................................passed
-And I select type of household..............................................passed
-And I select employment status..............................................passed
-And I select occupation.....................................................passed
-And I click continue........................................................failed
+And i enter my gender.......................................................failed
+And I enter email address...................................................skipped
+And I enter my phone number.................................................skipped
+And I select yes I know my eirocode.........................................skipped
+And I enter my eircode......................................................skipped
+And I click find address....................................................skipped
+And I click the checkbox....................................................skipped
+And I select type of household..............................................skipped
+And I select employment status..............................................skipped
+And I select occupation.....................................................skipped
+And I click continue........................................................skipped
 Then your car section is displayed..........................................skipped
 
 StackTrace:
-org.openqa.selenium.ElementNotVisibleException: element not visible
-  (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 29 milliseconds
+org.openqa.selenium.WebDriverException: Element is obscured (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
 Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
 System info: host: 'Yemi-PC', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\adeyemi\AppData\Local\Temp\scoped_dir10064_10677}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: f8036151b65887d3d4854929e9682cab
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities [{applicationCacheEnabled=true, acceptSslCerts=true, browserVersion=38.14393.0.0, platformVersion=10, locationContextEnabled=true, webStorageEnabled=true, browserName=MicrosoftEdge, takesScreenshot=true, pageLoadStrategy=normal, takesElementScreenshot=true, platformName=windows, platform=ANY}]
+Session ID: F6B05236-8C58-4B7C-B499-B752FCB7CEDA
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -36,8 +34,8 @@ Session ID: f8036151b65887d3d4854929e9682cab
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at cucumber.steps.GetQuoteSteps.i_click_continue(GetQuoteSteps.java:164)
-	at ✽.And I click continue(features/GetAQuote.feature:21)
+	at cucumber.steps.GetQuoteSteps.i_enter_my_gender(GetQuoteSteps.java:107)
+	at ✽.And i enter my gender(features/GetAQuote.feature:11)
 ]]></failure>
 </testcase>
 </testsuite>
